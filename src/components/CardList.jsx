@@ -5,7 +5,7 @@ export default function CardList({movies}){
     return(
         <div className = "card">
             {movies.map((movie) => (
-            <Card key = {movie.title} movie = {movie}/>
+                <Card movie = {movie}/>
             ))}
         </div>
     )

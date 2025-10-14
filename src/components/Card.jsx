@@ -1,13 +1,14 @@
 import React from "react"
 
-export default function Card(movie){
+export default function Card(movies){
+    console.log(movies)
     return(
         <div className = "cardList">
-        <h1>{movie.title}</h1>
-        <p>{movie.genre}</p>
-        <p>{movie.rating}</p>
-        <p>{movie.director}</p>
-        <p>{movie.actors}</p>
+        <h1>{movies.movie.title}</h1>
+        <p>{movies.movie.genre}</p>
+        <p>{movies.movie.rating}</p>
+        <p>{movies.movie.director}</p>
+        <p>{movies.movie.actors}</p>
         </div>
     )
 }
