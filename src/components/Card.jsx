@@ -4,6 +4,7 @@ export default function Card(movies){
     console.log(movies)
     return(
         <div className = "cardList">
+        <img src = {movies.movie.poster}/>
         <h1>{movies.movie.title}</h1>
         <p>{movies.movie.genre}</p>
         <p>{movies.movie.rating}</p>
