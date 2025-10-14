@@ -5,15 +5,7 @@ import list from "./movies.js"
 list.sort((a, b) => a.title.localeCompare(b.title));
 
 const movieList = list.map((movie) => {
-  return (
-      <MovieCard
-          img={movie.poster}
-          title={movie.title}
-          genre={movie.genre}
-          rating={movie.rating}
-          actors={movie.actors} 
-      />
-  )
+  return ()
 })
 
 function App() {
