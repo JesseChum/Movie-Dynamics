@@ -1,6 +1,12 @@
 import React from "react"
 
 export default function Card(movies){
+    let actors = ""
+    movies.movie.actors.forEach(actor => {
+        actors += actor + ", "
+    });
+    actors = actors.substring(0, actors.length - 2)
+
     console.log(movies)
     return(
         <div className = "cardList">
@@ -9,7 +15,7 @@ export default function Card(movies){
         <p>{movies.movie.genre}</p>
         <p>{movies.movie.rating}</p>
         <p>{movies.movie.director}</p>
-        <p>{movies.movie.actors}</p>
+        <p>{actors}</p>
         </div>
     )
 }
